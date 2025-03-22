@@ -4,7 +4,9 @@ import Quiz from './components/Quiz/Quiz';
 const App = () => {
   return (
     <div>
-      <h1>AWS Quiz App</h1>
+      <h1 className='AppTitle'>
+        <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>AWS Quiz App</a>
+      </h1>
       <Quiz />
     </div>
   );

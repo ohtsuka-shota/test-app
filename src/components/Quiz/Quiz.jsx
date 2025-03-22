@@ -4,8 +4,8 @@ import chapter02 from '../data/chapter02';
 
 // 章とそれに関連する問題を定義
 const chapters = {
-  'Chapter 1': chapter01,
-  'Chapter 2': chapter02
+  'Chapter 1 VPCとEC2等': chapter01,
+  'Chapter 2 IAMユーザやロール、S3、Cloudtrail等': chapter02
 };
 
 const shuffleArray = (array) => {
@@ -60,7 +60,7 @@ const Quiz = () => {
   if (selectedChapter === null) {
     return (
       <div>
-        <h2>Select a Chapter</h2>
+        <h2>チャプターを選んでください！</h2>
         {Object.keys(chapters).map((chapter) => (
           <button key={chapter} onClick={() => handleChapterSelect(chapter)}>
             {chapter}
