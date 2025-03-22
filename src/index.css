@@ -57,9 +57,30 @@ button:focus-visible {
 }
 
 /* 大塚 カスタマイズ */
-.AppTitle {
+.app-title {
   color: orange;
+}
 
+.chapter-select {
+  background-color: orange;
+  color: white;
+  margin: 5px;
+}
+
+.option-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-item {
+  background-color: orange;
+  color: white;
+  margin: 5px;
+}
+
+.finish-chapter-button {
+  background-color: blue;
+  color: white;
 }
 
 @media (prefers-color-scheme: light) {

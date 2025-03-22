@@ -60,9 +60,9 @@ const Quiz = () => {
   if (selectedChapter === null) {
     return (
       <div>
-        <h2>チャプターを選んでください！</h2>
+        <h2>チャプターを選んでください</h2>
         {Object.keys(chapters).map((chapter) => (
-          <button key={chapter} onClick={() => handleChapterSelect(chapter)}>
+          <button className='chapter-select' key={chapter} onClick={() => handleChapterSelect(chapter)}>
             {chapter}
           </button>
         ))}
@@ -76,9 +76,9 @@ const Quiz = () => {
   return (
     <div>
       <h2>{currentQuestion.question}</h2>
-      <div>
+      <div className='option-list'>
         {shuffledOptions.map((option) => (
-          <button key={option} onClick={() => handleAnswer(option)}>
+          <button className='option-item' key={option} onClick={() => handleAnswer(option)}>
             {option}
           </button>
         ))}
@@ -91,8 +91,8 @@ const Quiz = () => {
           )}
           {isCorrect && isLastQuestion && (
             <div>
-              <p>You've completed the chapter!</p>
-              <button onClick={handleRestart}>Back to Chapter Selection</button>
+              <p>全ての問題を解き終えました!お疲れ様でした！</p>
+              <button className='finish-chapter-button' onClick={handleRestart}>ホーム画面に戻る</button>
             </div>
           )}
         </div>
