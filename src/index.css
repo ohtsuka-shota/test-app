@@ -78,6 +78,11 @@ button:focus-visible {
   margin: 5px;
 }
 
+.next-question-button {
+  background-color: blue;
+  color: white;
+}
+
 .finish-chapter-button {
   background-color: blue;
   color: white;

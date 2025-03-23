@@ -85,9 +85,9 @@ const Quiz = () => {
       </div>
       {isCorrect !== null && (
         <div>
-          {isCorrect ? <p>Correct!</p> : <p>Incorrect. Try again.</p>}
+          {isCorrect ? <p>正解です！!</p> : <p>もう一度考えてみましょう！</p>}
           {isCorrect && !isLastQuestion && (
-            <button onClick={handleNextQuestion}>Next</button>
+            <button className='next-question-button' onClick={handleNextQuestion}>次の問題へ進む</button>
           )}
           {isCorrect && isLastQuestion && (
             <div>
