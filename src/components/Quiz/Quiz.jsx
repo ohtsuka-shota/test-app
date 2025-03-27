@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import chapter01 from '../data/chapter01';
 import chapter02 from '../data/chapter02';
+import awsCloudBenefits from '../data/awsCloudBenefits';
+import awsWellArchitectedQuestions from '../data/awsWellArchitectedQuestions';
+import awsMigrationQuestions from '../data/awsMigrationQuestions';
 
 // 章とそれに関連する問題を定義
 const chapters = {
   'Chapter 1 VPCとEC2等': chapter01,
-  'Chapter 2 IAMユーザやロール、S3、Cloudtrail等': chapter02
+  'Chapter 2 IAMユーザやロール、S3、Cloudtrail等': chapter02,
+  '1.1: AWSクラウドの利点を定義する': awsCloudBenefits,
+  '1.2: AWSクラウドの設計原則を特定する': awsWellArchitectedQuestions,
+  '1.3: AWSクラウドへの移行の利点と戦略を理解する': awsMigrationQuestions,
 };
 
 const shuffleArray = (array) => {
